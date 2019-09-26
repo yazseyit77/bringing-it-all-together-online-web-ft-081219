@@ -6,4 +6,15 @@ class Dog
     @breed = breed
   end
 
+  def self.create
+    sql = <<-SQL
+      CREATE TABLE dogs (
+        id INTEGER PRIMARY KEY,
+        name TEXT,
+        breed TEXT
+      );
+      SQL
+  end
+
+  
 end
