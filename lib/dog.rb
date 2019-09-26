@@ -16,5 +16,5 @@ class Dog
       SQL
   end
 
-  
+
 end
