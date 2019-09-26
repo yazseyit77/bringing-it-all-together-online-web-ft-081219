@@ -54,4 +54,8 @@ class Dog
     }
     self.new(attr_hashes)
   end
+
+  def self.find_by_id
+    "SELECT * FROM dogs WHERE id = ?;"
+  end
 end
